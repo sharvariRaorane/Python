@@ -1,0 +1,15 @@
+{% extends 'todoapp/base.html' %}
+
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="container-fluid">
+    <h3>Are you sure this task is done?</h3>
+    <button type="submit">Confirm</button>
+
+    </div>
+    
+
+</form>
+
+{% endblock %}
